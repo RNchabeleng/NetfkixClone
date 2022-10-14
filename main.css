@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #e50914 --dark-color: #141414
+    --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 * {
@@ -54,7 +55,7 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 120px 90px 200px #000, inset -120px -100px -200px #000;
+    box-shadow: inset 120px 100px 200px #000, inset -120px -100px 200px #000;
 }
 
 .showcase-top {
@@ -92,8 +93,8 @@ img {
 
 .showcase-conent h1 {
     font-weight: 700;
-    font-size: 5rem;
-    line-height: 1rem;
+    font-size: 5.2rem;
+    line-height: 1.1rem;
     margin-bottom: 2rem;
 }
 
@@ -101,17 +102,17 @@ img {
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: 0 0 2rem;
 }
 
-.tab {
+.tabs {
     background: var(--dark-color);
     padding-top: 1rem;
     border-bottom: 3px solid #3d3d3d;
 }
 
-.tab .container {
+.tabs .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
@@ -154,7 +155,7 @@ img {
     display: block !important;
 }
 
-tab-1-content .tab-1-content-inner {
+#tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -198,6 +199,10 @@ tab-1-content .tab-1-content-inner {
     text-align: center;
 }
 
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
 .table tbody tr:nth-child(odd) {
     background: #222;
 }
@@ -218,8 +223,7 @@ tab-1-content .tab-1-content-inner {
     margin-bottom: 1.5rem;
 }
 
-footer,
-.footer,
+footer .footer,
 .footer-cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -303,8 +307,14 @@ footer,
         height: 70vh;
     }
 
-    .height-sm {
+    .hide-sm {
         display: none;
+    }
+
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
     }
 
     .showcase-conent h1 {
