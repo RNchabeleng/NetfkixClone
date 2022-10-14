@@ -79,7 +79,7 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.showcase-conent {
+.showcase-content {
     position: relative;
     margin: auto;
     margin-top: 9rem;
@@ -91,14 +91,14 @@ img {
     z-index: 2;
 }
 
-.showcase-conent h1 {
+.showcase-content h1 {
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 1.1rem;
     margin-bottom: 2rem;
 }
 
-.showcase-conent p {
+.showcase-content p {
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
